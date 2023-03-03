@@ -12,7 +12,7 @@ class PostAdmin(admin.ModelAdmin):
 
 class CategoryAdmin(admin.ModelAdmin):
     inlines = [CategoryAdminInline]
-    exclude = ('posts',)
+    exclude = ("posts",)
 
 
 admin.site.register(Post, PostAdmin)
